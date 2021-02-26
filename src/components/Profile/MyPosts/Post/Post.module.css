@@ -1,0 +1,42 @@
+.post {
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    display: flex;
+    padding: 25px;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.post .left {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.post .left img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.post .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post .right .author {
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+    font-size: 17px;
+    /*text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);*/
+}
+
+.post .right .text {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 150%;
+    text-indent: 25px;
+}

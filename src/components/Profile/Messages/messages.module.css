@@ -1,0 +1,49 @@
+.dialogs {
+    display: flex;
+}
+
+/** Dialog list **/
+.dialog_list {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 25px;
+    border-right: 1px solid #ccc;
+    padding: 25px 0;
+    align-items: flex-start;
+}
+
+.dialog_list .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.dialog_list .item .name {
+    text-decoration: none;
+    color: black;
+}
+
+.dialog_list .item.active .name {
+    font-weight: bold;
+}
+
+/** Dialog messages **/
+.dialog_messages {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog_messages .item {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dialog_messages .item .text {
+    line-height: 150%;
+    font-size: 14px;
+}
